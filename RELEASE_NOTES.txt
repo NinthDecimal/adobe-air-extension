@@ -1,0 +1,5 @@
+v1.0.1
+- Updated to latest versions (2.0.1) of the Android and iOS SDK's
+
+v1.0.0
+-initial release

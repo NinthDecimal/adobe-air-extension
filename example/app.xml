@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/3.5">
+  <!-- A universally unique application identifier. Must be unique across all AIR applications.
+	Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
+  <id>com.aneexample.kiipsample</id>
+  <!-- Used as the filename for the application. Required. -->
+  <filename>kiipsample</filename>
+  <!-- The name that is displayed in the AIR application installer. -->
+  <name>kiipsample</name>
+  <!-- A string value of the format <0-999>.<0-999>.<0-999> 
+	It MUST be three parts separated by periods. Required. -->
+  <versionNumber>1.0.0</versionNumber>
+  <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the 
+	application, as it should be shown to users. Optional. -->
+  <versionLabel>v1.0.0</versionLabel>
+  <!-- Settings for the application's initial window. Required. -->
+  <initialWindow>
+    <!-- The main SWF or HTML file of the application. Required. -->
+    <content>anesample.swf</content>
+    <!-- Should the app figure out which way to orient itself? -->
+    <autoOrients>true</autoOrients>
+    <!-- What is the standard aspect ratio, landscape or portrait? -->
+    <aspectRatio>portrait</aspectRatio>
+    <renderMode>cpu</renderMode>
+    <fullScreen>true</fullScreen>
+    <systemChrome>standard</systemChrome>
+  </initialWindow>
+  
+ <android>
+        <manifestAdditions><![CDATA[
+    <manifest android:installLocation="auto">
+        <uses-sdk android:targetSdkVersion="16"/>
+		<uses-sdk android:minSdkVersion="8"/>
+			    <uses-permission android:name="android.permission.INTERNET"/>
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+			</manifest>
+			
+		]]></manifestAdditions>
+    </android>
+	<iPhone>
+		<InfoAdditions><![CDATA[
+			<key>UIDeviceFamily</key> 
+<array> 
+    <string>1</string> 
+    <string>2</string> 
+</array>
+		]]></InfoAdditions>
+	</iPhone>
+
+  <extensions>
+    <extensionID>com.kiip.extensions.Kiip</extensionID>
+  </extensions>
+</application>
