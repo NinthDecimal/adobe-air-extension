@@ -1,0 +1,11 @@
+<platform xmlns="http://ns.adobe.com/air/extension/3.5">
+    <sdkVersion>6.0</sdkVersion>
+    <linkerOptions>
+		<option>-w</option>
+        <option>-framework QuartzCore</option>
+		<option>-framework SystemConfiguration</option>
+		<option>-framework CoreGraphics</option>
+		<option>-framework CoreTelephony</option>
+		<option>-framework Foundation</option>
+    </linkerOptions>
+</platform>
