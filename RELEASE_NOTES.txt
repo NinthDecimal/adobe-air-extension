@@ -1,3 +1,5 @@
+v1.0.3
+- Updated to 2.0.5 of Android SDK.
 v1.0.2
 - Updated to 2.0.4 of iOS SDK. Android is still 2.0.4
 v1.0.1
