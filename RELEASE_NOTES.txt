@@ -1,4 +1,9 @@
+2014-1-14
+v1.0.5
+- Android fix: listeners not being called correctly.
+
 2013-12-3
+v1.0.4
 - Updated to 2.0.6 of Android SDK
 - Updated to 2.0.5 of iOS SDK
 
