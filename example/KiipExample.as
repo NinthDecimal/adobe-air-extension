@@ -64,9 +64,8 @@ public class KiipExample extends Sprite
 
 		// All Event Listeners are optional.
 		
-		// feedback when premium content is received, a swarm is joined, or a moment is posted
+		// feedback when premium content is received, or a moment is posted
 		Kiip.kiip.addEventListener(KiipEvent.CONTENT_RECEIVED,onContentReceived);
-		Kiip.kiip.addEventListener(KiipEvent.SWARM_JOINED,onSwarmJoined);
 		Kiip.kiip.addEventListener(KiipEvent.MOMENT_SAVED,onMomentSaved);
 		Kiip.kiip.addEventListener(KiipEvent.SAVE_MOMENT_FAILED, onMomentFailed);
 		
@@ -110,7 +109,6 @@ public class KiipExample extends Sprite
 	public function setUserParams():void
 	{
 		log("setting user params..");
-		Kiip.kiip.setAlias("Kip Kiiply");
 		Kiip.kiip.setBirthday(new Date());
 		Kiip.kiip.setEmail("kip@kiip.com");
 		Kiip.kiip.setGender(KiipGender.MALE);
@@ -197,12 +195,6 @@ public class KiipExample extends Sprite
 	private function onNotificationDismissed(e:KiipEvent):void
 	{
 		log("Notification dismissed");
-	}
-	
-	/** Swarm Joined */
-	private function onSwarmJoined(e:KiipEvent):void
-	{
-		log("Swarm Joined:"+e.momentId);
 	}
 	
 	/** Last Content String Saved so we can see it over the poptart callback while debugging */
