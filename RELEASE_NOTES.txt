@@ -1,3 +1,8 @@
+2014-9/18
+v1.0.8
+- iOS8 support
+- Android fix: volley lib crash
+
 2014-7/17
 v1.0.7
 - iOS 2.1.0
