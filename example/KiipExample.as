@@ -112,6 +112,9 @@ public class KiipExample extends Sprite
 		Kiip.kiip.setBirthday(new Date());
 		Kiip.kiip.setEmail("kip@kiip.com");
 		Kiip.kiip.setGender(KiipGender.MALE);
+		//The boolean value to receive test rewards in developement/debug mode. Default is NO.
+		//Change to false for production.
+		Kiip.kiip.setTestMode(true);
 		log("finished setting user params.");
 	}
 
