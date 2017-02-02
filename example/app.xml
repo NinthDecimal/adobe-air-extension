@@ -7,10 +7,10 @@
   <filename>kiipsample</filename>
   <!-- The name that is displayed in the AIR application installer. -->
   <name>kiipsample</name>
-  <!-- A string value of the format <0-999>.<0-999>.<0-999> 
+  <!-- A string value of the format <0-999>.<0-999>.<0-999>
 	It MUST be three parts separated by periods. Required. -->
   <versionNumber>1.0.0</versionNumber>
-  <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the 
+  <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the
 	application, as it should be shown to users. Optional. -->
   <versionLabel>v1.0.0</versionLabel>
   <!-- Settings for the application's initial window. Required. -->
@@ -25,7 +25,7 @@
     <fullScreen>true</fullScreen>
     <systemChrome>standard</systemChrome>
   </initialWindow>
-  
+
  <android>
         <manifestAdditions><![CDATA[
     <manifest android:installLocation="auto">
@@ -33,16 +33,26 @@
 		<uses-sdk android:minSdkVersion="8"/>
 			    <uses-permission android:name="android.permission.INTERNET"/>
 				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <application>
+        <meta-data
+            android:name="me.kiip.sdk.AppKey"
+            android:value="<KIIP_API_KEY>" />
+        <provider android:name="me.kiip.sdk.KiipSDKProvider"
+                android:authorities="me.kiip.sdk.KiipSDKProvider<KIIP_API_KEY>"
+                android:exported="true"
+                android:multiprocess="true" >
+        </provider>
+        </application>
 			</manifest>
-			
+
 		]]></manifestAdditions>
     </android>
 	<iPhone>
 		<InfoAdditions><![CDATA[
-			<key>UIDeviceFamily</key> 
-<array> 
-    <string>1</string> 
-    <string>2</string> 
+			<key>UIDeviceFamily</key>
+<array>
+    <string>1</string>
+    <string>2</string>
 </array>
 		]]></InfoAdditions>
 	</iPhone>
