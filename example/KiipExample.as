@@ -17,13 +17,13 @@ public class KiipExample extends Sprite
 	//
 
 	/** APP ID */
-	public static const APP_ID:String="3b46e5f42299f1697193bb843ed8dbf4";
+	public static const APP_ID:String="APP_ID";
 
 	/** App Secret */
-	public static const APP_SECRET:String="90c4f68ebb4817b3edf24799b04df22c";
+	public static const APP_SECRET:String="APP_SECRET";
 
 	/** Test Moment ID */
-	public static const MOMENT_ID:String="t";
+	public static const MOMENT_ID:String="MOMENT";
 
 	//
 	// Instance Variables
