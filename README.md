@@ -36,8 +36,8 @@ In order to use the Kiip Extension on Android, you'll need to update the `manife
 	  <android>
         <manifestAdditions><![CDATA[
 			<manifest android:installLocation="auto">
-			<uses-sdk android:targetSdkVersion="19"/>
-			<uses-sdk android:minSdkVersion="14"/>
+			<uses-sdk android:targetSdkVersion="16"/>
+			<uses-sdk android:minSdkVersion="8"/>
 			    <uses-permission android:name="android.permission.INTERNET"/>
 				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 			</manifest>			
